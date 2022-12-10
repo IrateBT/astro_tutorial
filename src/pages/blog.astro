@@ -1,19 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
 import Card from "../components/Card.astro";
 
 const pageTitle = "My Astro Learning Blog";
-
 ---
 
 <Layout title={pageTitle}>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/blog">Blog</a></li>
-        </ul>
-    </nav>
     <main>
         <h1>{pageTitle}</h1>
         <p>This is where I will post about my journey learning Astro.</p>
