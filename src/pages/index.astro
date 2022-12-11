@@ -1,8 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Footer from "../components/Footer.astro";
 import Card from "../components/Card.astro";
-import Header from "../components/Header.astro";
+import Greeting from "../components/greetings";
 
 const pageTitle = "Astro";
 ---
@@ -16,6 +15,9 @@ const pageTitle = "Astro";
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message
 			above.
 		</p>
+		
+		<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://docs.astro.build/"
